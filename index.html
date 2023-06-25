@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles.css">
+    <script defer src="./src/index.js"></script>
+    <title>Form</title>
+</head>
+<body>
+<div class="main-cont">
+    <header>
+        <h1>CREATE AN ACCOUNT</h1>
+        <h5>We always keep your name and email address private.</h5>
+     </header>
+    <main> 
+    <form>
+        <div id="form-cont">
+            <div id="outer-input-cont">
+                <div class="inner-input-cont"> 
+                    <input type="text" id="name" name="firstName" placeholder="First name"> 
+                    <input type="text" id="last-name" name="lastName" placeholder="Last name"> 
+                </div>
+                
+                <div class="inner-input-cont">
+                    <input type="text" id="dname" name="nickName" placeholder="Nickname">
+                    <input type="text" id="email" name="email" placeholder="Email Address"> 
+                </div>
+                <div class="inner-input-cont"> 
+                    <input type="password" id="pass" name="password" placeholder="Password"> 
+                    <input type="password" id="pass-confirm" name="c-password" placeholder="Password Confirmation"> 
+                </div>
+            </div>
+
+        <div id="radio-cont">
+            <div class="radio-wrapper">
+                <div class="radio-inner">
+                     <input type="radio" id="buyer" name="visitor"> 
+                    <label for="buyer">Join As a Buyer</label>
+                </div>                        
+                    <p>I am looking for a Name, Logo for my business, brand or product</p>
+            </div>
+            <div class="radio-wrapper">
+                <div class="radio-inner">
+                        <input type="radio" id="seller" name="visitor">
+                        <label for="seller">Join As a Creative or Marketplace Seller</label> 
+                </div>                       
+                    <p>I plan to submit name ideas, Logodesigns or sell names</p>
+            </div>
+        <div class="check-cont">
+            <input type="checkbox" id="allow"> 
+            <label for="allow">Allow Squadhelp to send marketing/promotional offers from time to time</label> </div>
+        </div>
+         <div> 
+            <button type="submit">Submit</button> 
+            <button type="reset">Cancel</button> 
+            </div>
+    </div>
+    </form>
+</main>
+</div>
+   
+
+</body>
+</html>
